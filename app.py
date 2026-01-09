@@ -3,6 +3,7 @@ import pickle
 import string
 import nltk
 nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
@@ -52,4 +53,5 @@ if st.button("Predict"):
         st.header("Spam")
     else:
         st.header("Not Spam")
+
 
